@@ -1,7 +1,9 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: pip install qmsolve[with_mayavi]
+  - init: |
+      pip install numpy
+      pip install qmsolve[with_mayavi]
 github:
   prebuilds:
     master: true
